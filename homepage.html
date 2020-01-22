@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="homepage.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <form>
+                <fieldset>
+                    <div class="wrap">
+                        <div class="marks-container">
+                            <div class="quant-container">
+                                <h3>Quant</h3>
+                                <span>
+                                    <label>Current</label>
+                                    <input class="inputboxes" type="number" id="quant-current" min="1" max="60"/>
+                                </span>
+                                <span>
+                                    <label>Target</label>
+                                    <input class="inputboxes" type="number" id="quant-target" min="1" max="60"/>
+                                </span>
+                            </div>
+                            <div class="verbal-container">
+                                <h3>Verbal</h3>
+                                <span>
+                                    <label>Current</label>
+                                    <input class="inputboxes" type="number" id="verbal-current" min="1" max="60"/>
+                                </span>
+                                <span>
+                                    <label>Target</label>
+                                    <input class="inputboxes" type="number" id="verbal-target" min="1" max="60"/>
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="button-container">
+                                <button class="button-style" onclick="onSubmitButton()" id="SubmitButton" type="button">Submit and Refresh</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="scoreDiv" class="hide"> 
+                                <div class="total-score">
+                                    <h3>Total Score</h3>
+                                    <span>
+                                        <h3 id="score"></h3>
+                                    </span>
+                                    <div>
+                                        <div class="progress-bar-text-div">
+                                            <div class="progress-bar-text" id="totalScoreCurrent"></div>
+                                            <div class="progress-bar-text" id="totalScoreTarget"></div>
+                                        </div>
+                                        <div class="arrow-div"><div class="arrow-total-current"></div> <div id="arrow-total-target-up" class="hide"></div></div>
+                                        <div class="parent-div">
+                                            <div class="progressBar" id="progressBar"></div>
+                                            <div class="targetBar" id="targetBar"></div>
+                                            <div class="currentBar" id="currentBar"></div>
+                                        </div>
+                                        <div id="arrow-total-target-down" class="hide"></div>
+                                    </div>
+                                    <p style="padding-top:15px;">Your estimated GMAT score per your performance in this mock test is <span id="tcs"></span> which is
+                                        <strong id="totalDifference"></strong> lower than your target GMAT score of <span id="tscore"></span>.</p>
+                                </div>
+                                <div class="marks-container">
+                                    <div class="quant-container">
+                                        <h5>Quant Score</h5>
+                                        <span>
+                                            <h3 id="quantScore"></h3>
+                                        </span>
+                                        <div>
+                                            <div class="progress-bar-text-div">
+                                                <div class="progress-bar-text" id="qcsUpper"></div>
+                                                <div class="progress-bar-text" id="qcsLower"></div>
+                                            </div>
+                                            <div class="arrow-div"><div class="arrow-quant-current"></div> <div id="arrow-quant-target-up" class="hide"></div></div>
+                                            <div class="parent-div">
+                                                <div class="progressBar" id="progressBar"></div>
+                                                <div class="quantTargetBar" id="quantTargetBar"></div>
+                                                <div class="quantCurrentBar" id="quantCurrentBar"></div>
+                                            </div>
+                                            <div id="arrow-quant-target-down" class="hide"></div>
+                                        </div>
+                                        <p style="padding-top:10px;">Your estimated GMAT score per your performance in this mock test is <span id="qcs"></span> which
+                                            is <strong id="quantDifference"></strong> <span id="quantStatus"></span> than your target GMAT score of <span id="qscore"></span>.</p>
+                                    </div>
+                                    <div class="verbal-container">
+                                        <h5>Verbal Score</h5>
+                                        <span>
+                                            <h3 id="verbalScore"></h3>
+                                        </span>
+                                        <div>
+                                            <div class="progress-bar-text-div">
+                                                <span class="progress-bar-text" id="vcsUpper"></span>
+                                                <span class="progress-bar-text" id="vcsLower"></span>
+                                            </div>
+                                            <div class="arrow-div"><div class="arrow-verbal-current"></div> <div id="arrow-verbal-target-up" class="hide"></div></div>
+                                            <div class="parent-div">
+                                                <div class="progressBar" id="progressBar"></div>
+                                                <div class="verbalTargetBar" id="verbalTargetBar"></div>
+                                                <div class="verbalCurrentBar" id="verbalCurrentBar"></div>
+                                            </div>
+                                            <div id="arrow-verbal-target-down" class="hide"></div>
+                                        </div>
+                                        <p style="padding-top:10px;">Your estimated GMAT score per your performance in this mock test is <span id="vcs"></span> which
+                                            is <strong id="verbalDifference"></strong> <span id="verStatus"></span><span id="vscore"></span>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./homepage.js"></script>
+</html>

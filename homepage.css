@@ -1,0 +1,264 @@
+#quant-current::-webkit-inner-spin-button,
+#quant-target::-webkit-inner-spin-button,
+#quant-current::-webkit-inner-spin-button,
+#verbal-current::-webkit-inner-spin-button,
+#verbal-target::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#quant-target::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#verbal-current::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#verbal-target::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.marks-container {
+  display: flex;
+}
+
+.quant-container {
+  flex-basis: 48%;
+}
+
+.verbal-container {
+  flex-basis: 46%;
+  margin-left: 2%;
+}
+
+.inputboxes {
+  width: 10%;
+}
+
+.button-container {
+  display: flex;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.button-style {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: deepskyblue;
+  padding: 0.5%;
+  border-radius: 22px;
+  border: 0px solid deepskyblue;
+  width: 23%;
+}
+
+.currentBar {
+  height: 20px;
+  z-index: 3;
+  background-color: blueviolet;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: white;
+}
+
+.progressBar {
+  height: 20px;
+  width: 100%;
+  z-index: 1;
+  background-color: #ddd;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+}
+
+.parent-div {
+  width: 75%;
+  position: relative;
+  z-index: 4;
+}
+
+.total-score {
+  background-color: #fcf3f3;
+  padding: 1% 1%;
+}
+
+.arrow-current {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid blueviolet;
+}
+
+.arrow-total-current {
+  width: 0;
+  position: absolute;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid blueviolet;
+}
+
+.arrow-quant-current {
+  width: 0;
+  position: absolute;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid blueviolet;
+}
+
+.arrow-verbal-current {
+  width: 0;
+  position: absolute;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid blueviolet;
+}
+
+.arrow-target-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid yellow;
+}
+
+#arrow-total-target-up {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid yellow;
+}
+
+#arrow-quant-target-up {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid yellow;
+}
+#arrow-verbal-target-up {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid yellow;
+}
+.arrow-target-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid yellow;
+}
+
+#arrow-total-target-down {
+  width: 0;
+  height: 20px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid yellow;
+}
+
+#arrow-quant-target-down {
+  width: 0;
+  height: 20px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid yellow;
+}
+#arrow-verbal-target-down {
+  width: 0;
+  height: 20px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid yellow;
+}
+
+.progress-bar-text {
+  font-size: xx-small;
+  position: absolute;
+  color: darkgrey;
+}
+
+/* .progress-bar-text-target {
+    font-size: xx-small;
+    position: absolute;
+    color: darkgrey;
+} */
+
+.arrow-div {
+  height: 5px;
+  position: relative;
+}
+
+.progress-bar-text-div {
+  height: 10px;
+  position: relative;
+}
+
+.targetBar {
+  height: 20px;
+  z-index: 2;
+  background-color: yellow;
+  position: absolute;
+  border-radius: 0 20px 20px 0;
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: white;
+}
+
+.quantCurrentBar {
+  height: 20px;
+  z-index: 3;
+  background-color: blueviolet;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: white;
+}
+.verbalCurrentBar {
+  height: 20px;
+  z-index: 3;
+  background-color: blueviolet;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: white;
+}
+.quantTargetBar {
+  height: 20px;
+  z-index: 2;
+  background-color: yellow;
+  position: absolute;
+  border-radius: 0 20px 20px 0;
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: white;
+}
+.verbalTargetBar {
+  height: 20px;
+  z-index: 2;
+  background-color: yellow;
+  position: absolute;
+  border-radius: 0 20px 20px 0;
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: white;
+}
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
